@@ -21,7 +21,7 @@ public class WeaponChanger : MonoBehaviour
 
     private void Start()
     {
-        ViewWeapon(WeaponType.OneHandedColdArms);
+        DisplayWeapon(WeaponType.OneHandedColdArms);
     }
 
     public void ChangeWeapon(int index)
@@ -37,30 +37,30 @@ public class WeaponChanger : MonoBehaviour
         switch (index)
         {
             case 0:
-                ViewWeapon(WeaponType.OneHandedColdArms);
+                DisplayWeapon(WeaponType.OneHandedColdArms);
                 break;
             case 1:
-                ViewWeapon(WeaponType.HandGun);
+                DisplayWeapon(WeaponType.HandGun);
                 break;
             case 2:
-                ViewWeapon(WeaponType.MachineGun);
+                DisplayWeapon(WeaponType.MachineGun);
                 break;
             case 3:
-                ViewWeapon(WeaponType.GatlingGun);
+                DisplayWeapon(WeaponType.GatlingGun);
                 break;
             case 4:
-                ViewWeapon(WeaponType.ShotGun);
+                DisplayWeapon(WeaponType.ShotGun);
                 break;
             case 5:
-                ViewWeapon(WeaponType.RocketLauncher);
+                DisplayWeapon(WeaponType.RocketLauncher);
                 break;
             case 6:
-                ViewWeapon(WeaponType.SniperRifle);
+                DisplayWeapon(WeaponType.SniperRifle);
                 break;
         }
     }
 
-    private void ViewWeapon(WeaponType type)
+    private void DisplayWeapon(WeaponType type)
     {
         foreach (var weaponView in _weaponViews)
         {
